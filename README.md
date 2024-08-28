@@ -32,7 +32,7 @@ The data collection process involved web scarping five different components for 
 2.	Points Distribution: 
 •	Scraped the points distribution data to understand how many points each team accumulated throughout the season via qualifiers and tournaments. This data helped identify the tournament winners for each season. 
 
-3.Cod Champs Information:
+3.  Cod Champs Information:
 •	Then Scraped data on the COD Champs, the final and most significant tournament of the season. This included the teams that participated, their rosters, final placements, and prize money.
 
 4.	LAN/Major Tournaments: 
