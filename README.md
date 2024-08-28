@@ -58,8 +58,8 @@ The data collection process involved web scarping five different components for 
 4. **LAN/Major Tournaments:**
    - Scraped data on LAN/Major Tournaments, including map records and series records.
    - A loop was used to navigate through the URLs, extracting data from specific HTML classes.
-
-     ![Install Requests](./img/major_infopt1.png)
+  
+     
      ![Install Requests](./img/majors_pt2.png)
 
 5. **Online Qualifiers:**
