@@ -76,14 +76,23 @@ The data collection process involved web scarping five different components for 
 
 
 ## Data Conversion
-### 1. Tournament Placing Columns
-- After the points distribution was scraped, the data was placed in a dataframe...
 
-### 2. Map and Series Win Percentages
-- Win percentages were calculated for both online/qualifiers and LAN/Major tournaments...
+1. **Tournament Placing Columns:**
+   - After scraping the points distribution data and organizing it into a data frame, I focused on creating the LAN Tournament Placing columns. Based on the points each team earned during specific major tournaments, I determined their placements. For example, if a team earned 100 points in a specific season, this would translate to a "1" in the tournament wins column.
 
-### 3. Converting Excel Files to CSV
-- Excel files were converted to CSV to simplify importing the data into SQL...
+     ![Install Requests](./img/tour_columns.png)
+
+2. **Map and Series Win Percentages:**
+   - This analysis was conducted for both online qualifiers and LAN/Major tournaments to calculate each team’s win percentage. These columns were created to identify which teams performed better in online qualifiers versus LAN events, providing insight into where each team excelled.
+
+     ![Install Requests](./img/percentages.png)
+
+
+3. **Converting Excel Files to CSV:**
+   - While I initially worked with Excel files because they are more user-friendly, I encountered issues when importing them into SQL. To resolve this, I converted the Excel files to CSV format, which simplified the importing process into SQL.
+
+   ![Install Requests](./img/excel_csv.png)
+
 
 ## Data Cleaning
 - Addressed issues with misplaced data in the COD Champs columns...
