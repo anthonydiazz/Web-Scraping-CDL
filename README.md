@@ -95,11 +95,32 @@ The data collection process involved web scarping five different components for 
 
 
 ## Data Cleaning
-- Addressed issues with misplaced data in the COD Champs columns...
-- Standardized data types across all seasons for easier combination...
 
+1. **Correcting Misplaced Data:**
+   - While scraping data for Call of Duty (CoD) Champs, some of the data was misaligned and ended up in incorrect columns. I addressed this by accessing the affected columns and manually adjusting the values to ensure they were correctly placed. Correcting team names made combining data frames easier.
+
+     ![Install Requests](./img/cod_champs_clean.png)
+
+2. **Consistent Data Types in SQL:**
+   - Before importing and combining all the seasons' data into a single database, I ensured that each dataset had consistent data types. This step was crucial to facilitate the smooth combination of all seasons into one comprehensive dataset.
+
+3. **Handling Series and Map Count Formatting Problems:**
+   - I encountered issues with the total series and map counts where values were formatted as "34 - 7", which led to problems during data export, sometimes even being interpreted as dates. To resolve this, I split these columns into separate "wins" and "losses" columns, so the data now appears as two distinct values (e.g., 34 and 7).
+
+4. **Creating New Columns and Dropping Old Ones:**
+   - After splitting the series and map counts, I created new columns to store these corrected values and dropped the old columns that were causing issues.
+     
+     ![Install Requests](./img/new_tables.png)
+
+5. **Cleaning Champs Roster Columns:**
+   -	Many Champs roster entries were imported with commas separating the player names, which caused the names to be split into new columns upon data export. I standardized the separators by replacing commas with semicolons, ensuring the names stayed together in a single column
+
+     ![Install Requests](./img/rosters.png)
+     
 ## Results
-The final result is a comprehensive dataset covering the 2021–2024 CDL seasons...
+
+The final result is a comprehensive dataset covering the 2021–2024 CDL seasons for all participating teams. This dataset includes detailed records of online and LAN performances, tournament placements, final season rankings, points accumulated throughout the season, and performance in the Call of Duty Champs. The dataset serves as a valuable resource for in-depth analysis of team performance across different environments and stages of competition.
 
 ## Future Work
-With the complete dataset in Excel, further analysis can be conducted to explore team performances...
+
+With the complete dataset now in Excel, the next steps involve conducting detailed analyses of team performances. For example, you could investigate which teams excelled in online play compared to LAN tournaments, or track performance trends across different seasons. This analysis will provide deeper insights into team strategies and overall competitiveness in the CDL.
