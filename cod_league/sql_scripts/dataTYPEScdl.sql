@@ -7,7 +7,8 @@
 -- part 1 
 USE CDL;
 GO
--- Replace 'Data - cdl_season_2020' with your table name
+-- table name 'Data - cdl_season_2024'
+-- do this for each of them to understand which datatypes need to be changed
 SELECT 
     COLUMN_NAME, 
     DATA_TYPE, 
@@ -20,95 +21,8 @@ WHERE
 
 -- part 2 
 -- altering table datatype 
--- Altering 2020 table
-ALTER TABLE [CDL].[dbo].[Data - cdl_season_2020]
-ALTER COLUMN Total_Series_Count NVARCHAR(50);
-
-ALTER TABLE [CDL].[dbo].[Data - cdl_season_2020]
-ALTER COLUMN Total_Map_Count NVARCHAR(50);
-
--- Change Season_Place to INT
-ALTER TABLE [CDL].[dbo].[Data - cdl_season_2020]
-ALTER COLUMN Season_Place INT;
-
-
--- Change percentage columns to FLOAT
-ALTER TABLE [CDL].[dbo].[Data - cdl_season_2020]
-ALTER COLUMN Total_Series_Win_Percentage FLOAT;
-
-ALTER TABLE [CDL].[dbo].[Data - cdl_season_2020]
-ALTER COLUMN Total_Map_Win_Percentage FLOAT;
-
--- Change Week_1 to Week_13 to INT
-ALTER TABLE [CDL].[dbo].[Data - cdl_season_2020]
-ALTER COLUMN Week_1 INT;
-
-ALTER TABLE [CDL].[dbo].[Data - cdl_season_2020]
-ALTER COLUMN Week_2 INT;
-
-ALTER TABLE [CDL].[dbo].[Data - cdl_season_2020]
-ALTER COLUMN Week_3 INT;
-
-ALTER TABLE [CDL].[dbo].[Data - cdl_season_2020]
-ALTER COLUMN Week_4 INT;
-
-ALTER TABLE [CDL].[dbo].[Data - cdl_season_2020]
-ALTER COLUMN Week_5 INT;
-
-ALTER TABLE [CDL].[dbo].[Data - cdl_season_2020]
-ALTER COLUMN Week_6 INT;
-
-ALTER TABLE [CDL].[dbo].[Data - cdl_season_2020]
-ALTER COLUMN Week_7 INT;
-
-ALTER TABLE [CDL].[dbo].[Data - cdl_season_2020]
-ALTER COLUMN Week_8 INT;
-
-ALTER TABLE [CDL].[dbo].[Data - cdl_season_2020]
-ALTER COLUMN Week_9 INT;
-
-ALTER TABLE [CDL].[dbo].[Data - cdl_season_2020]
-ALTER COLUMN Week_10 INT;
-
-ALTER TABLE [CDL].[dbo].[Data - cdl_season_2020]
-ALTER COLUMN Week_11 INT;
-
-ALTER TABLE [CDL].[dbo].[Data - cdl_season_2020]
-ALTER COLUMN Week_12 INT;
-
-ALTER TABLE [CDL].[dbo].[Data - cdl_season_2020]
-ALTER COLUMN Week_13 INT;
-
--- Change Total_Season_Points to INT
-ALTER TABLE [CDL].[dbo].[Data - cdl_season_2020]
-ALTER COLUMN Total_Season_Points INT;
-
--- Change Tournament_Wins, _2nd_Place, _3rd_4th_Place, _5th_6th_Place, and Last_Place to INT
-ALTER TABLE [CDL].[dbo].[Data - cdl_season_2020]
-ALTER COLUMN Tournament_Wins INT;
-
-ALTER TABLE [CDL].[dbo].[Data - cdl_season_2020]
-ALTER COLUMN _2nd_Place INT;
-
-ALTER TABLE [CDL].[dbo].[Data - cdl_season_2020]
-ALTER COLUMN _3rd_4th_Place INT;
-
-ALTER TABLE [CDL].[dbo].[Data - cdl_season_2020]
-ALTER COLUMN _5th_6th_Place INT;
-
-ALTER TABLE [CDL].[dbo].[Data - cdl_season_2020]
-ALTER COLUMN Last_Place INT;
-
--- Change Season_Year to INT
-ALTER TABLE [CDL].[dbo].[Data - cdl_season_2020]
-ALTER COLUMN Season_Year INT;
-
-
+-- to later combine them into a table
 -- Altering 2021 table
-
-
-
-
 
 ALTER TABLE [CDL].[dbo].[Data - cdl_season_2021]
 ALTER COLUMN Total_Series_Count NVARCHAR(50);
