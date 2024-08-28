@@ -27,10 +27,10 @@ The data collection process involved web scarping five different components for 
 1. **Webpage Access:**
    - Used the `requests` library to access the necessary webpages. This was crucial for obtaining the information needed for scraping.
    - Used `BeautifulSoup` to parse the HTML.
-   
-   ![Install Requests](./img/install_requets.png)
-   
    - Used `Pandas` to structure the data into data frames.
+
+      ![Install Requests](./cod_league/img/install_requests.png)
+
 
 2. **Points Distribution:**
    - Scraped the points distribution data to understand how many points each team accumulated throughout the season via qualifiers and tournaments.
