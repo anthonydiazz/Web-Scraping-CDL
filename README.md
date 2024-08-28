@@ -27,6 +27,7 @@ The data collection process involved web scarping five different components for 
 1.	Webpage Access: 
 •	Used the ‘requests’ library to access the necessary webpages. This was crucial for obtaining the information needed for scraping.
 •	Used BeautifulSoup to parse the HTML
+![Install Requests](./img/install_requests.png)
 
 
 •	Used Pandas to structure the data into data frames 
