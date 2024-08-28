@@ -24,27 +24,33 @@ This project involves scraping data for each team in the Call of Duty League (CD
 ## Data Collection
 The data collection process involved web scarping five different components for each CDL season (2021 – 2024):
 
-1.	Webpage Access: 
-•	Used the ‘requests’ library to access the necessary webpages. This was crucial for obtaining the information needed for scraping.
-•	Used BeautifulSoup to parse the HTML
-![Install Requests](./img/install_requests.png)
+1. **Webpage Access:**
+   - Used the `requests` library to access the necessary webpages. This was crucial for obtaining the information needed for scraping.
+   - Used `BeautifulSoup` to parse the HTML.
+   
+   ![Install Requests](./img/install_requests.png)
+   
+   - Used `Pandas` to structure the data into data frames.
 
+2. **Points Distribution:**
+   - Scraped the points distribution data to understand how many points each team accumulated throughout the season via qualifiers and tournaments.
+   - This data helped identify the tournament winners for each season.
 
-•	Used Pandas to structure the data into data frames 
-2.	Points Distribution: 
-•	Scraped the points distribution data to understand how many points each team accumulated throughout the season via qualifiers and tournaments. This data helped identify the tournament winners for each season. 
+3. **COD Champs Information:**
+   - Scraped data on the COD Champs, the final and most significant tournament of the season.
+   - This included the teams that participated, their rosters, final placements, and prize money.
 
-3.  Cod Champs Information:
-•	Then Scraped data on the COD Champs, the final and most significant tournament of the season. This included the teams that participated, their rosters, final placements, and prize money.
+4. **LAN/Major Tournaments:**
+   - Scraped data on LAN/Major Tournaments, including map records and series records.
+   - A loop was used to navigate through the URLs, extracting data from specific HTML classes.
 
-4.	LAN/Major Tournaments: 
-•	Scraped data on LAN/ Major Tournaments, including map records and series records. A loop was used to navigate through the URLs, extracting data from specific HTML classes.
+5. **Online Qualifiers:**
+   - Scraped data on the Online qualifiers, including map records and series records.
+   - A loop was used to navigate through the URLs, extracting data from specific HTML classes.
 
-5.	Online qualifiers:
-•	Scraped data on the Online qualifiers, including map records and series records. A loop was used to navigate through the URLs, extracting data from specific HTML classes. 
-
-6.	Data Integrating:
-•	After collecting data from all sources, the data was combined into a single data frame. This combined data frame was exported as an excel sheet for further analysis.
+6. **Data Integration:**
+   - After collecting data from all sources, the data was combined into a single data frame.
+   - This combined data frame was exported as an Excel sheet for further analysis.
 
 
 ## Data Conversion
