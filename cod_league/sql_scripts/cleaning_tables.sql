@@ -3,7 +3,7 @@ SET Champs_Roster = REPLACE(Champs_Roster, ',', ';');
 
 
 UPDATE [Data - cdl_season_2021]
-SET Champs_Roster = REPLACE(Champs_Roster, '•', ';');
+SET Champs_Roster = REPLACE(Champs_Roster, 'â€¢', ';');
 
 
 ALTER TABLE Combined_CDL_Seasons
@@ -88,13 +88,3 @@ DROP COLUMN
     Champs_Map_Count;
 
 
-
-
-	SELECT 
-    COLUMN_NAME, 
-    DATA_TYPE, 
-    CHARACTER_MAXIMUM_LENGTH 
-FROM 
-    INFORMATION_SCHEMA.COLUMNS
-WHERE 
-    TABLE_NAME = 'YourTableName';
