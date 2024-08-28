@@ -15,8 +15,19 @@ This project involves scraping data for each team in the Call of Duty League (CD
 ## Installation
 ### Python
 1. Install pip: Ensure you have pip installed to manage and install python libraries.
-2. Install requests:  this will allow us to get access to the webpages we want to scrape
-3. Install pandas:  This is used to structure the scraped data into data frames 
+   
+   ![Install Requests](./img/pip.png)
+
+
+3. Install requests:  this will allow us to get access to the webpages we want to scrape
+
+   ![Install Requests](./img/install_requets.png)
+
+   
+5. Install pandas:  This is used to structure the scraped data into data frames
+
+   ![Install Requests](./img/pd.png)
+
 
 ### SQL
 - Install SQL Server Management Studio (SSMS) : Required for managing and querying the collected data in a SQL database
@@ -29,29 +40,39 @@ The data collection process involved web scarping five different components for 
    - Used `BeautifulSoup` to parse the HTML.
    - Used `Pandas` to structure the data into data frames.
 
-   ![Install Requests](./cod_league/img/install_requests.png)
-     
+     ![Install Requests](./img/requests.png)
 
 
-1. **Points Distribution:**
+2. **Points Distribution:**
    - Scraped the points distribution data to understand how many points each team accumulated throughout the season via qualifiers and tournaments.
    - This data helped identify the tournament winners for each season.
 
-2. **COD Champs Information:**
+     ![Install Requests](./img/pt_dist.png)
+
+3. **COD Champs Information:**
    - Scraped data on the COD Champs, the final and most significant tournament of the season.
    - This included the teams that participated, their rosters, final placements, and prize money.
 
-3. **LAN/Major Tournaments:**
+     ![Install Requests](./img/champs_info.png)
+
+4. **LAN/Major Tournaments:**
    - Scraped data on LAN/Major Tournaments, including map records and series records.
    - A loop was used to navigate through the URLs, extracting data from specific HTML classes.
 
-4. **Online Qualifiers:**
+     ![Install Requests](./img/major_infopt1.png)
+     ![Install Requests](./img/majors_pt2.png)
+
+5. **Online Qualifiers:**
    - Scraped data on the Online qualifiers, including map records and series records.
    - A loop was used to navigate through the URLs, extracting data from specific HTML classes.
 
-5. **Data Integration:**
+     ![Install Requests](./img/online_info.png)
+
+6. **Data Integration:**
    - After collecting data from all sources, the data was combined into a single data frame.
    - This combined data frame was exported as an Excel sheet for further analysis.
+
+     ![Install Requests](./img/final_output.png)
 
 
 ## Data Conversion
